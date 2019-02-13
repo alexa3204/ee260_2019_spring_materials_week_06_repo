@@ -14,12 +14,17 @@ Perform the following number-system conversions (show your work):
 - c. <a href="https://www.codecogs.com/eqnedit.php?latex={0F100}_{16}&space;=&space;{?}_{2}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?{0F100}_{16}&space;=&space;{?}_{2}" title="{0F100}_{16} = {?}_{2}" /></a>  
 - d. <a href="https://www.codecogs.com/eqnedit.php?latex={1001101101101}_{2}&space;=&space;{?}_{16}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?{1001101101101}_{2}&space;=&space;{?}_{16}" title="{1001101101101}_{2} = {?}_{16}" /></a> 
 
+
 # (5 pts)
 Evaluate the Boolean equation F = a AND (b OR (c AND d)) for the given values
 of variables a, b, c, and d:  
 
 - a. a=1, b=1, c=0, d=1  
 - b. a=0, b=0, c=0, d=1  
+
+1*(1+(0*1)) = 1*(1+0) = 1*1 = 1
+0*(0+(0*1)) = 0*(0+0) = 0*0 = 0 
+
 
 # (5 pts)
 Draw the OR(x,y) gate CMOS transistor circuit. Show the conduction path and output
@@ -30,6 +35,7 @@ value when:
 
 # (5 pts)
 Convert the following equation directly to gate-level circuits: F = a + bcd’ + ae + f’
+
 
 # (5 pts)
 A network router connects multiple computers together and allows them to send messages to each other. If two or more computers send messages simultaneously, the messages “collide” and the messages must be resent. Using the combinational design process of Table 2.5, create a collision detection circuit for a router that connects 4 computers. The circuit has 4 inputs labeled M0 through M3 that are 1 when the corresponding computer is sending a message and 0 otherwise. The circuit has one output labeled C that is 1 when a collision is detected and 0 otherwise.
