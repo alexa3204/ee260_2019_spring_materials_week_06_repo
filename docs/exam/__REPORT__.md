@@ -39,8 +39,36 @@ Convert the function F shown in the truth table in Table below to an equation. D
 
 ![Truth table](figures/problem_6.png)
 
+F = a'b'c+abc'+abc
+
 # (5 pts)
 Implement the function above and test its functionality via the testbench in [codes/exam/problem_7](../../codes/exam/problem_7). Include the waveform in the report.
+
+Simplified: F= ab+a'b'c
+
+Code: 
+
+        
+    `timescale 1ns / 1ps
+
+
+    module midterm_1(F,a,b,c );
+    input a;
+    input b;
+    input c;
+    output F;
+    
+    wire out1,out2,ina,inb,or_out;
+    
+    not  inva (ina,a);
+    not invb(inb,b);
+    and a1 (out1,a,b);
+    and a2 (out2,ina,inb,c);
+    or or1(F,out1,out2);
+    assign F = or_out;  
+    
+    
+    endmodule
 
 # (5 pts) 
 Use the theorems of boolean algebra to simplify the following logic function: F = m·n·o + q’·p’·n’ + p·r·m + q’·o·m·p’ + m·r (hint, the result has three terms. Don't spend too much time on this one. If stuck, move on first)
